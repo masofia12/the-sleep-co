@@ -19,8 +19,10 @@
 
     <!--This is our fontawesome icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--This is our CSS stylesheet-->
     <link rel="stylesheet" href="/style.css" />
 
@@ -33,31 +35,44 @@
     <header class="grid tall-100 md-tall-80">
         
         <div class="header-nav col-12-top grid">
-    <div class="col-5_sm-12-middle sm-padded-b-0">
+    <div class="col-5_sm-11-middle sm-padded-b-0">
         <a href="/index.html" class="logo">
             <h2>The Sleep Co</h2>
         </a>
         
     </div>
-    <nav class="col-7_sm-12-middle text-right sm-text-center">
+    <nav class="col-7_sm-12-middle text-right sm-text-center hide-sm">
         <a href="/index.html"> Home </a>
         <a href="/about.html"> About </a>
         <a href="/products.html"> Products </a>
         <a href="/contact.html"> Contact </a>
     </nav>
+
+    <div class="col-1 show-sm">
+        <div class="hamburger-button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
 </div>
+
+<nav class="mobile-menu bg-featured padded">
+    <a href="/index.html"> Home </a>
+    <a href="/about.html"> About </a>
+    <a href="/products.html"> Products </a>
+    <a href="/contact.html"> Contact </a>
+</nav>
         
         <div class="col-12 text-center">
-            <h3 class="font-weight-extra-bold editable">
+            <h3 class="font-weight-extra-bold editable" data-aos="fade-in" data-aos-duration="1000">
                 <span class="featured-text">sleep</span> like a baby
             </h3>
-            <h1 class="font-weight-light editable">the ultimate mattress solution</h1>
+            <h1 class="font-weight-light editable" data-aos="fade-up" data-aos-delay="500">the ultimate mattress solution</h1>
         </div>
     </header>
    
     <!---------------------- Gallery / About Section --------------------->
     <section class="grid">
-        <div class="padded col-6_xs-12-middle">
+        <div class="padded col-6_xs-12-middle" data-aos="fade-right">
             <h2 class="editable">build to last a <span class="featured-text">lifetime</span></h2>
             <p class="editable">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, fugiat, quidem ipsum sed nostrum dignissimos eius doloribus at laborum molestiae</p> 
             <p class="editable">Minus sunt aperiam blanditiis voluptatum itaque consectetur illum dicta aspernatur!</p>
@@ -68,7 +83,7 @@
         <div class="bg-image bg-pug col-6_xs-12 tall-70">
             <!-- background image pug sleeping -->
         </div>
-        <div class="padded col-6_xs-12-middle">
+        <div class="padded col-6_xs-12-middle" data-aos="fade-left">
             <h2>so <span class="featured-text">soft</span> you'll melt</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, fugiat, quidem ipsum sed nostrum dignissimos eius doloribus at laborum molestiae minus sunt aperiam blanditiis voluptatum itaque consectetur illum dicta aspernatur!</p>
         </div>
@@ -146,5 +161,15 @@
             <p><strong>Instagram:</strong> <a href='https://www.instagram/thesleepco'>@thesleepco</a></p>
         </div>
     </footer>
+    
+    <!------------ Add jQuery --------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!------------ Our Custom Javascript file--------------->
+     <script src="/scripts.js"></script>
+
 </body>
 </html>
