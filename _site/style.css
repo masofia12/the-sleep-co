@@ -255,6 +255,22 @@ footer a {
     padding: 0.5%;
   }
 
+.gallery a{
+    border-bottom: none;
+}
+/* background of gallery when active */
+.lg-backdrop {
+    background-color: rgb(20, 20, 20);
+}
+
+.lg-backdrop.in {
+    opacity: 0.9;
+}
+
+.lg-sub-htm {
+    background-color: rgb(20, 20, 20);
+}
+
 /* ------------------Buttons & Forms----------------*/
 
 input,

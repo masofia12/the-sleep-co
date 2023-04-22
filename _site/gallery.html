@@ -2,7 +2,7 @@
 <html>
 <!--This is the head of our html where we add external resurces and metadata -->
 <head>
-    <!-- Vewport meta for responsive -->
+     <!-- Vewport meta for responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sleep like a baby</title>
@@ -23,6 +23,9 @@
     <!-- Animate on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Light gallery for popups -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!--This is our CSS stylesheet-->
     <link rel="stylesheet" href="/style.css" />
 
@@ -31,7 +34,7 @@
 
 <!--This is the body, this is where all of your page content goes-->
 <body>
-     <!---------------------- Header Banner ------------------->
+    <!---------------------- Header Banner ------------------->
  <header class="grid tall-100 md-tall-80">
         
     <div class="header-nav col-12-top grid">
@@ -72,99 +75,114 @@
     </div>
 </header>
 
- <!---------------------- Gallery ------------------->
+<!---------------------- Gallery ------------------->
 
-<section class="padded">
 
-    <div class="gallery grid">
-        
-        <div class="col-6">
-          <div class="bg-image square"        
-               style="background-image: url('images/the-sleep-co-bed.jpg');">
-        </div>
-        </div> 
-        
-        <div class="col-6">
-          <div class="bg-image square"        
-               style="background-image: url('images/the-sleep-co-pillow.jpg');">
-        </div>
-        </div> 
-        
-        <div class="col-12">
-          <div class="bg-image landscape"        
-               style="background-image: url('images/the-sleep-co-pug.jpg');">
-        </div>
-        </div> 
-        
-        <div class="col-4">
-          <div class="bg-image landscape"        
-               style="background-image: url('images/the-sleep-co-sheets.jpg');">
-        </div>
-        </div> 
-        
-        <div class="col-4">
-          <div class="bg-image landscape"        
-               style="background-image: url('images/the-sleep-co-pug.jpg');">
-        </div>
-        </div> 
-        
-        <div class="col-4">
-          <div class="bg-image landscape"        
-               style="background-image: url('images/the-sleep-co-pillow.jpg');">
-        </div>
-        </div> 
-        
+<!-- Popup Gallery ------------>
+
+<section class="padded bg-dark">
+
+  <h2>Popup Gallery</h2>
+  <div class="gallery grid" id="lightgallery">
+
+    
+    
+
+    <a class="col-4_sm-12" href="images/the-sleep-co-bed.jpg">
+      <div class="bg-image square" style="background-image: url('images/the-sleep-co-bed.jpg');">
       </div>
+    </a> 
+    
 
-      <!-- <div class="gallery grid">
-        <div class="col-6">
-          <div class="bg-image square bg-img-1"></div>
-        </div> 
-        <div class="col-6">
-          <div class="bg-image square bg-img-2 bg-pos-b"></div>
-        </div> 
-        <div class="col-4_xs-12">
-          <div class="bg-image portrait-tall bg-img-3"></div>
-        </div> 
-        <div class="col-4_xs-12">
-          <div class="bg-image portrait-tall bg-img-4"></div>
-        </div> 
-        <div class="col-4_xs-12">
-          <div class="bg-image portrait-tall "></div>
-        </div> 
-        <div class="col-12">
-          <div class="bg-image landscape bg-img-5"></div>
-        </div> 
-      </div> -->
+    
+    
+
+    <a class="col-4_sm-12" href="images/the-sleep-co-pillow.jpg">
+      <div class="bg-image square" style="background-image: url('images/the-sleep-co-pillow.jpg');">
+      </div>
+    </a> 
+    
+
+    
+    
+
+    <a class="col-4_sm-12" href="images/the-sleep-co-pillow.jpg">
+      <div class="bg-image square" style="background-image: url('images/the-sleep-co-pillow.jpg');">
+      </div>
+    </a> 
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+
+  </div>
+
+
+  <!-- <div class="gallery grid" id="lightgallery-2">
+
+    <a class="button" href="images/the-sleep-co-pillow.jpg">View our work</a> 
+    <a href="images/the-sleep-co-pug.jpg" title="Cute dog"></a> 
+    <a href="images/the-sleep-co-sheets.jpg" title="Bed sheets 1"></a>
+    <a href="images/the-sleep-co-bed.jpg" title="Bed"></a> 
+    <a href="images/the-sleep-co-pillow.jpg" title="Pillow"></a>
+    <a href="images/the-sleep-co-sheets.jpg" title="Bed sheets 2"></a>
+
+  </div> -->
+</section>
+
+
+ <!---------------------- Testimonial --------------------->
+
+<section class="padded grid padded-lg">
+    <div class="col-1 text-right">
+        <span class="quote-icon">“</span>
+    </div>
+    <div class="col-10 text-center">
+        <p class="medium-text font-weight-light">I've never experienced sleep like this. Omg I really love this mattress I want to buy one for every member of my family</p>
+        <p class="subtitle">- A very happy customer</p>
+    </div>
+    <div class="col-1">
+        <span class="quote-icon">”</span>
+    </div>
 </section>
 
 
 
-
-
-     <!---------------------- Footer --------------------->
-     <footer class="padded grid-spaceBetween bg-dark">
-        <div class="col-4-bottom">
-            <h2>let's 
-                <br /><span class="featured-text">connect</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facilis necessitatibus sint dolorum earum iste nihil, similique molestias dicta voluptates? Quisquam aut facere nesciunt est distinctio, nulla aliquam repudiandae ex?</p>
-        </div>
-        <div class="col-5-bottom">
-            <p><strong>Call:</strong> <a href='tel:#'>099-9122</a></p>
-            <p><strong>Email:</strong> <a href='mailto:#'>hello@thesleep.co</a></p>
-            <p><strong>Store:</strong> 55 Main St, Chicago, IL</p>
-            <p><strong>Instagram:</strong> <a href='https://www.instagram/thesleepco'>@thesleepco</a></p>
-        </div>
-    </footer>
+     
     
-    <!------------ Add jQuery --------------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<footer class="padded grid-spaceBetween bg-dark">
+    <div class="col-4-bottom">
+        <h2>let's 
+            <br /><span class="featured-text">connect</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facilis necessitatibus sint dolorum earum iste nihil, similique molestias dicta voluptates? Quisquam aut facere nesciunt est distinctio, nulla aliquam repudiandae ex?</p>
+    </div>
+    <div class="col-5-bottom">
+        <p><strong>Call:</strong> <a href='tel:#'>099-9122</a></p>
+        <p><strong>Email:</strong> <a href='mailto:#'>hello@thesleep.co</a></p>
+        <p><strong>Store:</strong> 55 Main St, Chicago, IL</p>
+        <p><strong>Instagram:</strong> <a href='https://www.instagram/thesleepco'>@thesleepco</a></p>
+    </div>
+</footer>
+    
+    <!--------- Add jQuery ---------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Animate on scroll -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Animate on scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!------------ Our Custom Javascript file--------------->
-     <script src="/scripts.js"></script>
+<!-- JS for scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+
+<!-- Our Custom Javascript file-------->
+<script src="/scripts.js"></script>
 
 </body>
 </html>
