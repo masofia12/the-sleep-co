@@ -225,13 +225,6 @@ footer a {
 }
 
 
-[class*="col-"], 
-[class*="col_"], 
-[class~="col"] {
-    box-sizing: border-box;
-    padding: 0 .5rem 0.5rem;
-}
-
 /* ----------------Background images----------------- */
 
 .bg-bed {background-image: url('images/the-sleep-co-bed.jpg');}
