@@ -1,8 +1,19 @@
 ---
 layout: default
+cards:
+ - heading: Small heading
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, quibusdam molestiae aperiam illum non obcaecati!
+   featured_image: /images/the-sleep-co-sheets.jpg
+ - heading: Small heading
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, quibusdam molestiae aperiam illum non obcaecati!
+   featured_image: /images/the-sleep-co-pillow.jpg
+ - heading: Small heading
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, quibusdam molestiae aperiam illum non obcaecati!
+   featured_image: /images/the-sleep-co-pug.jpg
 ---    
       
     <!---------------------- Header Banner ------------------->
+
     <header class="grid tall-60">
        
         {% include header-nav.html %}
@@ -42,28 +53,20 @@ layout: default
     <!---------------------- Cards --------------------->
 
     <section class="grid padded">
+        {% for item in page.cards %}
         <div class="col-4 padded-sm">
-            <div class="bg-image portrait"></div>
+            <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
             <div class="padded-1">
-                <h3>little heading</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsam nisi, non repellendus ullam impedit quisquam aut aperiam molestias nam ex officiis consectetur, temporibus laborum ad cupiditate, aliquam suscipit eveniet?</p>
+                <h3>{{item.heading}}</h3>
+                <p>{{item.description}}</p>
             </div>
         </div>
-        <div class="col-4 padded-sm">
-            <div class="bg-image portrait"></div>
-            <div class="padded-1">
-                <h3>little heading</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsam nisi, non repellendus ullam impedit quisquam aut aperiam molestias nam ex officiis consectetur, temporibus laborum ad cupiditate, aliquam suscipit eveniet?</p>
-        </div>
-        <div class="col-4 padded-sm">
-            <div class="bg-image portrait"></div>
-            <div class="padded-1">
-                <h3>little heading</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsam nisi, non repellendus ullam impedit quisquam aut aperiam molestias nam ex officiis consectetur, temporibus laborum ad cupiditate, aliquam suscipit eveniet?</p>
-        </div>
+        {% endfor %}
+        
     </section>
 
     <!---------------------- Image Banner --------------------->
+
     <section class="padded text-center bg-dark tall-70 grid">
         <div class="col-12 text-middle"> 
             <h3 class="big-text">
@@ -74,6 +77,7 @@ layout: default
     </section>
 
     <!---------------------- Gallery / About Section --------------------->
+
     <section class="grid">
         <div class="padded col-6-middle">
             <h2 class="editable">build to last a <span class="featured-text">lifetime</span></h2>
